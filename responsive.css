@@ -1,0 +1,42 @@
+@media (width >= 1000px) {
+    header .lorem{
+        font-size: 22px;
+        height:250px;
+    } 
+    section{
+        font-size: 20px;
+    }        
+    .sectionContImgs .articleImg{
+        
+        height: 250px;
+      
+    }
+    .articleImg a{
+        font-size: 40px;
+    }
+
+    .contCuriosidad{
+        width: 80%;
+        height: 200px;
+        
+        padding: 15px;
+        font-size: 20px;
+    }
+
+
+
+
+    footer .containerLogo {
+        width: 40%;
+    }
+    footer .containerRedesSociales {
+        width: 60%;
+        height: 150px;
+        gap: 30px;
+    }
+    footer .containerRedesSociales img{
+        width: 35px;
+    }
+}
+
+

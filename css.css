@@ -1,0 +1,199 @@
+/* Css-Index */
+*{
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+}
+body{
+    height: 100vh;
+}
+.barraSuper{
+    width: 100%;
+    height: 30px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.barraSuper span{
+    padding-left: 5px;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.522),rgba(0, 0, 0, 0.627)), url(imgs/mamifero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .lorem{
+    background: rgba(0, 0, 0, 0.357);
+    width: 60%;
+    color: white;
+    font-size: 18px; 
+    border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.42);
+
+}
+header .lorem h1, p{
+   padding: 20px;
+}
+
+.posterLogo{
+    position: absolute;
+    top: -30px;
+    animation: moverLogo 2.5s ;
+}
+    @keyframes moverLogo {
+        50%{
+            top: -100px;
+        }
+    }
+    .posterLogo img{
+       width: 200px;
+       filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    }
+
+/* Main-- */
+main{
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+section{
+    width: 90%;
+    background-color: white;
+}
+.sectionContExplorar{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.037);
+}
+/* Section-Animales <===> sectionContImgs */
+.sectionContImgs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+.sectionContImgs .articleImg{
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;            
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.469);
+}
+    .articleImg a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.478);
+        font-size: 35px;
+        font-weight: bold;
+        transition: 1s;
+    }
+    .articleImg a:hover{
+        color: rgb(230, 230, 230);
+    }
+
+.articleImg1{
+    background: linear-gradient(rgba(0, 0, 0, 0.307),rgba(0, 0, 0, 0.445)),url(imgs/reptiles.jpg);
+}
+.articleImg2{
+    background: linear-gradient(rgba(0, 0, 0, 0.307),rgba(0, 0, 0, 0.445)),url(imgs/peces.jpg);
+}
+.articleImg3{
+    background: linear-gradient(rgba(0, 0, 0, 0.307),rgba(0, 0, 0, 0.445)),url(imgs/anfibios.jpg);
+}
+.articleImg4{
+    background: linear-gradient(rgba(0, 0, 0, 0.307),rgba(0, 0, 0, 0.445)),url(imgs/aves.jpg);
+}
+.articleImg5{
+    background: linear-gradient(rgba(0, 0, 0, 0.307),rgba(0, 0, 0, 0.445)),url(imgs/mamifero.jpg);
+}
+/* Curioidad */
+.contCuriosidad{
+    width: 90%;
+    background: linear-gradient(rgba(0, 0, 0, 0.661),rgba(0, 0, 0, 0.566)),url(imgs/curiosidad.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+}
+.contCuriosidad .alert{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+}
+.alert img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+/* <!-- Footer --> */
+
+footer{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(rgba(0, 0, 0, 0.891),rgba(0, 0, 0, 0.843)),url(imgs/fondFooter.jpg);
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+footer .containerLogo {
+    width: 50%;
+    height: 80px;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-right: solid rgba(179, 179, 179, 0.355);
+}
+footer .containerRedesSociales {
+    width: 50%;
+    height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer .containerRedesSociales img{
+    width: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+footer .containerRedesSociales img:hover{
+    filter:drop-shadow(0px 0px 5px rgb(150, 150, 150)) 
+}
